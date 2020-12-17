@@ -1,0 +1,23 @@
+{{>layout/header}}
+
+<h1>모두의 마블 계산기</h1>
+<br>
+<div class="col-md-12">
+	<select id="capital" class="custom-select custom-select-sm">
+		{{#capitals}}
+			<option value="{{capitalId}}">{{name}}</option>
+		{{/capitals}}
+	</select>
+
+	<select id="build" class="custom-select custom-select-sm">
+		{{#build}}
+			<option value="{{buildId}}">{{name}}</option>
+		{{/build}}
+	</select>
+	<br>
+	<br>
+	<div id="result">
+
+	</div>
+
+{{>layout/footer}}
